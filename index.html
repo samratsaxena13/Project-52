@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title> Project 52 </title>
+</head>
+<body>
+  <h1> Monkey Walk </h1>
+  <img class="responsive" id="monkey" src="Monkey_1.png">
+<div>
+  <button type="button" onclick="phase()"> Move </button>
+</div>
+</body>
+<style>
+  body {text-align:center;}
+  h1 {font-family:'Montserrat';}
+  img {height:250px;}
+</style>
+<script>
+  var album = ["Monkey_1.png", "Monkey_2.png", "Monkey_3.png", "Monkey_4.png", "Monkey_5.png","Monkey_6.png", "Monkey_7.png", "Monkey_8.png", "Monkey_9.png", "Monkey_10.png"]
+  var n = 1;
+  //function phase () {if(n>10){n=1} document.getElementById("monkey").src= "Monkey_" + n + ".png"; n++;}
+  function phase () {if(n>9){n=0} document.getElementById("monkey").src= album[n]; n++;}
+</script>
+</html>
